@@ -40,6 +40,12 @@ namespace W25Week3IntroToInheritance
 			set { _commissionRate = value; }
 		}
 
-
+		public CommissionEmployee(int id, string name, double grossSales, double commissionRate)
+		{
+			Id = id;
+			Name = name;
+			GrossSales = grossSales;
+			CommissionRate = commissionRate;
+		}
 	}
 }
