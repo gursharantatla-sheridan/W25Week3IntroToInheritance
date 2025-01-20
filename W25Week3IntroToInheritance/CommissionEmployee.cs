@@ -47,5 +47,15 @@ namespace W25Week3IntroToInheritance
 			GrossSales = grossSales;
 			CommissionRate = commissionRate;
 		}
-	}
+
+		public double Earnings()
+		{
+			return GrossSales * CommissionRate;
+		}
+
+        public override string ToString()
+        {
+			return $"Id = {Id}\nName = {Name}\nGross Sales = {GrossSales:C}\nCommission Rate = {CommissionRate:P}";
+        }
+    }
 }
